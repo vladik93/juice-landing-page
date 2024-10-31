@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Amatic SC", serif;
+  font-size: 104px;
+}
+
+p {
+  font-family: "Karla", serif;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+section {
+  padding: 0 40px;
+}
+
+
+/*  */
+
+header {
+  height: 92px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  padding: 24px 40px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.nav-wrapper {
+  grid-column: 3 / span 3;
+}
+
+.nav-wrapper ul {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+}
+
+/*  */
+
+.hero {
+  display: flex;
+  align-items: center;
+  background: #F6F6F6;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.hero-image {
+  height: 900px;
+  width: 900px;
+}
+
+/*  */
+
+.title {
+  margin-bottom: 32px;
+}
+
+.title span {
+  color: #CCA266;
+}
+
+.description {
+  margin-bottom: 32px;
+}
+
+/*  */
+
+.items-panel {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.caret-left {
+  margin-right: 32px;
+}
+
+.caret-right {
+  margin-left: 32px;
+}
+
+.items {
+  display: flex;
+  gap: 32px;
+}
+
+.item {
+  width: 118px;
+  height: 200px;
+  position: relative; 
+}
+
+.item.selected {
+  background: rgba(229, 196, 149, 0.3);
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item:nth-child(1) img {
+  transform: translateX(-70px) translateY(-25px);
+}
+
+.item:nth-child(2) img {
+  transform: translateX(-62px) translateY(-22px);
+}
+
+.item:nth-child(3) img {
+  transform: translateX(-84px) translateY(-18px);
+}
+
+.hero-button {
+  background: #3D755E;
+  color: #F6F6F6;
+  padding: 16px 32px;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.images {
+  position: relative;
+}
+
+.nutrients {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(70px);
+  color: #CCA266;
+  gap: 2px;
+  
+}
